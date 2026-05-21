@@ -6,6 +6,8 @@ export interface FabricOption {
   priceAddon: number;
   colors: { name: string; hex: string }[];
   gradient: string;
+  threeRoughness: number;
+  threePattern: "twill" | "herringbone" | "plain" | "houndstooth";
 }
 
 export interface StyleOption {
@@ -35,6 +37,8 @@ export const fabrics: FabricOption[] = [
       { name: "Dove Grey", hex: "#9a9a9a" },
     ],
     gradient: "from-slate-600 to-slate-800",
+    threeRoughness: 0.85,
+    threePattern: "twill",
   },
   {
     id: "cashmere",
@@ -49,6 +53,8 @@ export const fabrics: FabricOption[] = [
       { name: "Midnight", hex: "#1c1c2e" },
     ],
     gradient: "from-stone-400 to-amber-700",
+    threeRoughness: 0.75,
+    threePattern: "plain",
   },
   {
     id: "linen",
@@ -63,6 +69,8 @@ export const fabrics: FabricOption[] = [
       { name: "Sage", hex: "#8fa68a" },
     ],
     gradient: "from-amber-100 to-yellow-200",
+    threeRoughness: 0.95,
+    threePattern: "plain",
   },
   {
     id: "harris-tweed",
@@ -77,6 +85,8 @@ export const fabrics: FabricOption[] = [
       { name: "Navy Windowpane", hex: "#1e3a5f" },
     ],
     gradient: "from-stone-600 to-stone-800",
+    threeRoughness: 0.90,
+    threePattern: "herringbone",
   },
 ];
 

@@ -8,6 +8,7 @@ import { useCartStore } from "@/lib/store/cartStore";
 const links = [
   { label: "Collections", href: "/collections" },
   { label: "Bespoke", href: "/bespoke" },
+  { label: "Measure", href: "/measure" },
   { label: "Lookbook", href: "/lookbook" },
 ];
 
